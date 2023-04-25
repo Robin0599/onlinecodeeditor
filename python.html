@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online, Live Code Editor</title>
+  <meta name="description" content="This is an online code editor for html css and javascript. ">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="David Mungai">
+  <meta name="keywords" content="Live code editor, online code editor, live html editor, live css editor, live javascript editor">
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+
+<body>
+  <div class="header-wrap">
+    <img style="max-width: 160px;" src="images/Guru_Nanak_Dev_University_Logo.png" alt="Logo">
+    <h4>Compile Your Python Program</h4>
+  </div>
+
+  <py-repl output="replOutput">
+    arr = [1, 2, 3, 4, 5];     
+     
+    print("Elements of given array: ");    
+    #Loop through the array by incrementing the value of i     
+        
+    for i in range(0, len(arr)):    
+        print(arr[i]), 
+  </py-repl>
+  <div id="replOutput"></div>
+  
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.11/ace.js" type="text/javascript"
+    charset="utf-8"></script>
+    <script src="app_py.js"></script>
+  
+</body>
+
+</html>
