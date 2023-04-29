@@ -235,11 +235,18 @@ body {
     bottom: -4.75rem;
     right: 0;
     padding: 20px 60px;
-    background: #161718;
+    background: #008000;
     left: 51%;
     transform: translateX(-50%);
     color: #fff;
-
+    max-width: 350px;
+    transition: .2s ease-in-out;
+}
+#runButton:hover{
+  background: #000;
+}
+#runButton svg{
+  color: #fff!important;
 }
 #replOutput{
   margin-top: 100px;
@@ -263,4 +270,9 @@ body {
 }
 #navbarNavAltMarkup{
   justify-content: right;
+}
+.python_code_section{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
