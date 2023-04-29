@@ -8,16 +8,36 @@
   <meta name="description" content="This is an online code editor for html css and javascript. ">
   <meta name="robots" content="index, follow">
   <meta name="author" content="David Mungai">
-  <meta name="keywords" content="Live code editor, online code editor, live html editor, live css editor, live javascript editor">
+  <meta name="keywords"
+    content="Live code editor, online code editor, live html editor, live css editor, live javascript editor">
+    
+  <!-- Bootstrap files css file is here and our css file -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css" />
-  <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-  <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
+  <!-- End of the css files -->
 </head>
 
 <body onkeyup="runEdit(3)" onload="runEdit(3)">
-    <div style="float:right;" class="run_python_code">
-      <a href="python.html">Run Your Python Code</a>
-    </div>
+
+  <!-- Navbar code goes here -->
+  <div class="run_python_code">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="python.html">Run Python Code</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- End of the navbar -->
+
   <div class="header-wrap">
     <img style="max-width: 160px;" src="images/Guru_Nanak_Dev_University_Logo.png" alt="Logo">
     <h4>Compile HTML, CSS and JavaScript on the web</h4>
@@ -32,48 +52,48 @@
     <div id="ide-container">
       <div class="panel-wrapper">
         <div id="html">
-&lt;!--predefined html, but editable--&gt;
+          &lt;!--predefined html, but editable--&gt;
 
-&lt;div class="circle"&gt;
-  click me!
-&lt;/div&gt;
+          &lt;div class="circle"&gt;
+          click me!
+          &lt;/div&gt;
 
         </div>
       </div>
       <div class="panel-wrapper panelcs">
         <div id="css">
-/*predefined CSS, but editable*/
+          /*predefined CSS, but editable*/
 
-.circle {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	background: crimson;
-	margin: auto;
-	margin-top: 50px;
-	transition-duration: 300ms;
-}
+          .circle {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          background: crimson;
+          margin: auto;
+          margin-top: 50px;
+          transition-duration: 300ms;
+          }
         </div>
       </div>
       <div class="panel-wrapper paneljs">
         <div id="js">
-//predefined JavaScript, but editable
+          //predefined JavaScript, but editable
 
-var circle = document.querySelector(".circle");
-var bool = false;
+          var circle = document.querySelector(".circle");
+          var bool = false;
 
-circle.addEventListener('click', function() {
-	if (!bool) {
-		circle.style.background = "coral";
-		bool = true;
-	} else {
-		circle.style.background = "crimson";
-		bool = false;
-	}
-});
+          circle.addEventListener('click', function() {
+          if (!bool) {
+          circle.style.background = "coral";
+          bool = true;
+          } else {
+          circle.style.background = "crimson";
+          bool = false;
+          }
+          });
         </div>
       </div>
       <!-- <div class="panel-wrapper">
@@ -82,18 +102,20 @@ circle.addEventListener('click', function() {
 
     </div>
   </div>
-<div id="ide-containertwo">
-  <div class="panel-wrapper">
-        <iframe id="result"></iframe>
+  <div id="ide-containertwo">
+    <div class="panel-wrapper">
+      <iframe id="result"></iframe>
+    </div>
   </div>
-</div>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.11/ace.js" type="text/javascript"
     charset="utf-8"></script>
-    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <script src="app.js"></script>
-  
+
 </body>
 
 </html>
