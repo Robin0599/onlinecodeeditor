@@ -22,6 +22,23 @@ body {
 }
 
 
+.bottom-wrap {
+  margin: 30px 0;
+  text-align: center;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.bottom-wrap h4 {
+  margin-bottom: 16px;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.bottom-wrap p {
+  font-size: 14px;
+  line-height: 24px;
+}
 
 /*ace*/
 .ace_editor {
