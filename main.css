@@ -32,18 +32,20 @@ body {
  .bottom-wrap {
     text-align: center;
     font-family: sans-serif;
-    color: #fff;
+    color: #333;
     margin-bottom: 50px;
   }
 
   .bottom-wrap h4 {
     margin-top: 20px;
     font-size: 24px;
+    color: #fff;
   }
 
   .bottom-wrap p {
     font-size: 18px;
     margin-bottom: 20px;
+    color: #fff;
   }
 
   .bottom-wrap a {
