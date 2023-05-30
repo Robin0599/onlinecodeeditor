@@ -7,14 +7,14 @@
 body {
   background: #222222;
 }
-
-.header-wrap{
-	text-algin:center;
-	fontt-family: sans-serif;
-	color: #fff;
-	margin: 30px, 0, 30px, 0;
+.header-wrap {
+  margin: 30px 0 30px 0;
+  text-align: center;
+  font-family: sans-serif;
+  color: #ddd;
 }
-.header-wrap h3 {
+
+.header-wrap h1 {
   margin-bottom: 16px;
   font-weight: 300;
   font-size: 46px;
